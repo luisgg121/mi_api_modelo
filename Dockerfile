@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y default-jre
 WORKDIR /app
 
 # Copia el código
-COPY modelo/StackedEnsemble_AllModels_1_AutoML_1_20250803_162121 /app/modelo/
+# COPY modelo/StackedEnsemble_AllModels_1_AutoML_1_20250803_162121 /app/modelo/
+COPy . /app
 
 # Instala dependencias
 RUN pip install --no-cache-dir -r requirements.txt
