@@ -4,7 +4,8 @@ import h2o
 import pandas as pd
 
 h2o.init()
-model = h2o.load_model("./modelo/GBM_2_AutoML_1_20250731_190306")
+model = h2o.load_model("modelo/StackedEnsemble_AllModels_1_AutoML_1_20250803_190655")
+
 
 app = Flask(__name__)
 CORS(app)
